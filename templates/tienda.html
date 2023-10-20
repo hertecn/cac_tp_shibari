@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <!-- <link rel="shortcut icon" href="../image/cart.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+
+
+            <div id="contenedor_de_todo">
+
+                <div id="contenedor_titulo">
+                    <img class="logo" src="../img/arte  shibari25...jpg" alt="Imagen de shibari">
+                    <h1 class="titulo"><b>SHIBARI</b>-DOJO</h1>
+                </div>
+
+                <div id="contenedor_de_botones">
+
+                    <a href="../index.html" class="botones">INICIO</a>
+                    <a href="galeria.html" class="botones">GALERIA</a>
+                    <a href="tienda.html" class="botones">TIENDA </a>
+                    <a href="formulario.html" class="botones">CONTACTANOS</a>
+                </div>
+            </div>
+
+            <div class="fondo-container">
+                <div class="fondo2">
+
+                    <img class="img-fondo" src="../img/fondo7.png" alt="fondo">
+
+                </div>
+            </div>
+
+        </nav>
+
+
+
+
+    </header>
+
+
+
+    <main>
+
+        <h2 class="subtitulo">TIENDA</h2>
+
+        <br>
+        <br>
+        <br>
+        <hr>
+        <p>La propuesta de SHIBARI-DOJO es siempre promover la práctica responsable de este arte japonés
+            utilizando los materiales de mejor calidad y más adecuados para la práctica segura y profesional
+            del Shibari Kinbaku.
+
+            A continuación encontrará una lista de los productos que comercializamos, elegidos en base a
+            nuestra experiencia en este arte. Ofrecemos materiales de calidad con algunas opciones de bajo
+            costo siempre pensando en la mejor forma de acompañarlo en su camino de cuerdas.
+
+        </p>
+
+        <div class="ordenar">
+            <div class="filtrar-precio">
+                <h2>Filtrar por precio</h2>
+                <input type="range" class="price-slider" onchange="filterProducts()" min="5000" max="50000" step="500"
+                    value="100000">
+                <div class="rango-precio">
+                    <h2> Hasta: $ <span id="price-value">50000</span> </h2>
+                </div>
+            </div>
+
+            <div class="orden-precio">
+                <h2>Ordenar por </h2>
+                <select name="sort-buttons" id="sort-buttons" >
+                    <option value="asc">Menor precio</option>
+                    <option value="desc">Mayor precio</option>
+                </select>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <section class="container_articulos">
+
+
+            <div class="tienda" data-price="15000">
+                <img src="../img/remera1.png" alt="Imagen Shibari" class="galeria_img2">
+
+                <h2>Remera Arte de Shibari</h2>
+                <p>100% Algodon</p>
+                <p>Precio: $15000.00</p>
+            </div>
+
+
+            <div class="tienda" data-price="35000">
+                <img src="../img/libro1.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Libro Shibari</h2>
+                <p>Por Juan Jose Burzi</p>
+                <p>Precio: $35000.00</p>
+            </div>
+
+            <div class="tienda" data-price="33000">
+                <img src="../img/libro2.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Fotos de Shibari</h2>
+                <p>Andrien Chan</p>
+                <p>Precio: $33000.00</p>
+            </div>
+
+            <div class="tienda" data-price="5200">
+                <img src="../img/soga1.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Soga Roja</h2>
+                <p>Asanawa</p>
+                <p>Precio: $5200.00</p>
+            </div>
+
+            <div class="tienda" data-price="5800">
+                <img src="../img/soga2.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Cuerda natural</h2>
+                <p>Osada</p>
+                <p>Precio: $5800.00</p>
+            </div>
+
+            <div class="tienda" data-price="8000">
+                <img src="../img/aritos1.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Aritos Shibari</h2>
+                <p>Varios colores</p>
+                <p>Precio: $8000.00</p>
+            </div>
+
+            <div class="tienda" data-price="25000">
+                <img src="../img/guia1.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Guia Shibari</h2>
+                <p>Takeshi Shiba</p>
+                <p>Precio: $25000.00</p>
+            </div>
+
+            <div class="tienda" data-price="6500">
+                <img src="../img/soga3.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Cuerdas</h2>
+                <p>Varios colores</p>
+                <p>Precio: $6500.00</p>
+            </div>
+
+            <div class="tienda" data-price="42000">
+                <img src="../img/libro3.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Guia arte del Shibari</h2>
+                <p>Tada Suzuki</p>
+                <p>Precio: $42000.00</p>
+            </div>
+
+            <div class="tienda" data-price="4000">
+                <img src="../img/anill_ suspension.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Aro de suspension</h2>
+                <p>Shibari</p>
+                <p>Precio: $4000.00</p>
+            </div>
+
+            <div class="tienda" data-price="39000">
+                <img src="../img/libro4.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Libro Shibari</h2>
+                <p>Alexandra</p>
+                <p>Precio: $39000.00</p>
+            </div>
+
+            <div class="tienda" data-price="17000">
+                <img src="../img/ropa1.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Ropa shibari</h2>
+                <p>Echo con cuerdas</p>
+                <p>Precio: $17000.00</p>
+            </div>
+
+            <div class="tienda" data-price="7000">
+                <img src="../img/anill_ suspension2.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Aros Shibari</h2>
+                <p>Varios modelos</p>
+                <p>Precio: $7000.00</p>
+            </div>
+
+            <div class="tienda" data-price="22000">
+                <img src="../img/remera2.png" alt="Imagen Shibari" class="galeria_img2">
+                <h2>Musculosa Shibari</h2>
+                <p>Varios talles</p>
+                <p>Precio: $22000.00</p>
+            </div>
+
+
+
+
+
+
+
+
+            <!-- <div>
+                <article class="tienda" data-price="15000">
+                    <img src="../imagenes/imagen1.jpeg" alt="Producto 1" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 1</h2>
+                        <p>Figuras</p>
+                        <p>Precio: $15000.00</p>
+                        <button class="botones-compra">Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+
+            <div>
+                <article class="tienda" data-price="47000">
+                    <img src="../imagenes/imagen2.jpeg" alt="Producto 2" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 2</h2>
+                        <p>Confites</p>
+                        <p>Precio: $47000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+
+            <div>
+                <article class="tienda" data-price="28000">
+                    <img src="../imagenes/imagen3.jpeg" alt="Producto 3" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 3</h2>
+                        <p>Lazo</p>
+                        <p>Precio: $28000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+
+            <div>
+                <article class="tienda" data-price="50000">
+                    <img src="../imagenes/imagen4.jpeg" alt="Producto 4" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 4</h2>
+                        <p>Figuras 2</p>
+                        <p>Precio: $50000.00</p>
+                        <button class="botones-compra">Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+
+
+            <div>
+                <article class="tienda" data-price="42000">
+                    <img src="../imagenes/imagen5.jpeg" alt="Producto 5" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 5</h2>
+                        <p>Faro</p>
+                        <p>Precio: $42000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="tienda" data-price="19000">
+                    <img src="../imagenes/imagen6.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 6</h2>
+                        <p>Globolandia</p>
+                        <p>Precio: $19000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="tienda" data-price="39000">
+                    <img src="../imagenes/imagen7.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 7</h2>
+                        <p>Vegetacion de globos</p>
+                        <p>Precio: $39000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="tienda" data-price="25000">
+                    <img src="../imagenes/imagen8.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 8</h2>
+                        <p>La luna</p>
+                        <p>Precio: $25000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <<div>
+                <article class="tienda" data-price="80000">
+                    <img src="../imagenes/imagen9.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 9</h2>
+                        <p>Concepción</p>
+                        <p>Precio: $80000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="tienda" data-price="62000">
+                    <img src="../imagenes/imagen10.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 10</h2>
+                        <p>Producción de amor</p>
+                        <p>Precio: $62000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="tienda" data-price="48000">
+                    <img src="../imagenes/imagen11.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 11</h2>
+                        <p>Atardecer</p>
+                        <p>Precio: $48000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="tienda" data-price="20000">
+                    <img src="../imagenes/imagen12.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 12</h2>
+                        <p>Flores</p>
+                        <p>Precio: $20000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="tienda" data-price="90000">
+                    <img src="../imagenes/imagen13.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 13</h2>
+                        <p>La joven</p>
+                        <p>Precio: $90000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="tienda" data-price="88000">
+                    <img src="../imagenes/imagen14.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 14</h2>
+                        <p>Mandala 1</p>
+                        <p>Precio: $88000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="tienda" data-price="14000">
+                    <img src="../imagenes/imagen15.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 15</h2>
+                        <p>Mandala 2</p>
+                        <p>Precio: $14000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div>
+
+
+            <div>
+                <article class="tienda" data-price="44000">
+                    <img src="../imagenes/imagen16.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 16</h2>
+                        <p>Vida de flores</p>
+                        <p>Precio: $44000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div> -->
+
+            <!-- <div>
+                <article class="tienda" data-price="33000">
+                    <img src="../imagenes/imagen17.jpeg" alt="Producto 6" class="galeria_img2">
+                    <div class="info-producto">
+                        <h2>Cuadro 17</h2>
+                        <p>Flor</p>
+                        <p>Precio: $33000.00</p>
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </article>
+            </div> -->
+
+
+
+            <!-- Mas productos acá? Banner deslizante? -->
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <ul class="pagination">
+        <!-- Los números de página se agregarán aquí dinámicamente -->
+    </ul>
+
+
+
+    <script src="../js/index.js"></script>
+</body>
+
+
+<footer>
+    <div class="container_footer">
+
+        <img class="logo" src="../img/arte  shibari25...jpg" alt="Imagen de shibari">
+        <h3>SHIBARI-DOJO</h3>
+
+        <p>Kinbaku</p>
+        <p>Una posibilidad aerea de vivir en un mundo flotante</p>
+        <!-- <p>Arte y sus multiples expresiones- Shibari/Kinbaku - Ataduras Japonesas</p> -->
+        <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 SHIBARI-DOJO. diseñado por <span>Hernan Ledesma y Joshelin Torres</span></p>
+        </div>
+
+
+    </div>
+</footer>
+
+
+</html>

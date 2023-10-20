@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+
+
+
+
+            <div id="contenedor_de_todo">
+
+                <div id="contenedor_titulo">
+                    <img class="logo" src="../img/arte  shibari25...jpg" alt="Imagen de shibari">
+                    <h1 class="titulo"><b>SHIBARI</b>-DOJO</h1>
+                </div>
+
+                <div id="contenedor_de_botones">
+
+                    <a href="../index.html" class="botones">INICIO</a>
+                    <a href="galeria.html" class="botones">GALERIA</a>
+                    <a href="tienda.html" class="botones">TIENDA</a>
+
+                    <a href="formulario.html" class="botones">CONTACTANOS</a>
+                </div>
+            </div>
+
+            <div class="fondo-container">
+                <div class="fondo2">
+
+                    <img class="img-fondo" src="../img/fondo5.png" alt="fondo">
+
+                </div>
+            </div>
+
+
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <h2 class="subtitulo">CONTACTENOS</h2>
+
+        <br>
+        <br>
+        <br>
+        <hr>
+        <p>Si estás en la Ciudad de Buenos Aires, o planeas darte una vuelta por aquí,
+            no dudes en dejarnos tus datos de contacto en el formulario a continuación para que yo personalmente
+            pueda ponerme en contacto contigo y contestarte cualquier duda que tengas.
+            <br>
+            En SHIBARI-DOJO siempre estamos dispuestos a contestar las preguntas y escuchar
+            las inquietudes de aquellos que aman las cuerdas. Ya sea que lo hagas desde tu rol de
+            atador, de modelo, de fotógrafo o de simple espectador, tu pregunta, tu comentario, tu crítica, nos
+            interesa.
+
+        </p>
+
+
+        <br>
+
+        <!-- section de formulario -->
+
+
+
+        <h3>Formulario de consulta</h3>
+
+        <section class="formulario">
+
+            <form method="post" action="https://formspree.io/f/xleyaqwd" onsubmit="return validarFormulario()">
+
+                <section class="container-formulario">
+                    <div>
+                        <div>
+                            <label for="Nombre">*Nombre</label>
+                            <br>
+                            <input type="text" name="Nombre" id="Nombre" maxlength="10" class="datos_contacto">
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="Apellido">*Apellido</label>
+                            <br>
+                            <input type="text" name="Apellido" id="Apellido" maxlength="10" class="datos_contacto">
+                        </div>
+
+                        <br>
+
+
+
+                        <div id="edad_genero">
+
+                            <label for="Edad" class="datos_contacto">*Edad</label>
+
+                            <input type="number" name="Edad" id="Edad" maxlength="2" class="datos_contacto">
+
+
+                            <label for="" class="datos_contacto">Seleciona un genero</label>
+                            <br>
+                            <select name="genero" id="genero" class="datos_contacto">
+                                <option>femenino</option>
+                                <option>masculino</option>
+                                <option>otro</option>
+                            </select>
+                        </div>
+
+
+                        <br>
+
+
+                        <div>
+                            <label for="Correo electronico">*Correo electronico</label>
+                            <br>
+                            <input type="email" name="Correo_electronico" id="Correo_electronico"
+                                class="datos_contacto">
+                        </div>
+
+                        <br>
+                    </div>
+                    
+                </section>
+
+                <div>
+                    <label for="Numero de contacto">*Numero de celular</label>
+                    <br>
+                    <input type="number" name="Celular" id="Celular" maxlength="12" class="datos_contacto">
+                </div>
+
+                <br>
+
+
+
+
+                <div>
+                    <label for="Dejanos tu consulta y nos estaremos comunicando a la brevedad">Dejanos tu consulta y nos
+                        estaremos comunicando a la brevedad</label>
+                    <br>
+
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="20"
+                        placeholder="Escriba su comentario no mas de 20 caracteres" class="mensaje_contacto"></textarea>
+                    <h5>*datos obligatorios</h5>
+                </div>
+
+
+
+
+                <input type="submit" value="Enviar" class="boton_form">
+                <input type="reset" value="Borrar" class="boton_form">
+
+            </form>
+
+            <script src="../js/index.js"></script>
+        </section>
+
+    </main>
+
+    
+
+
+
+  
+
+</body>
+
+
+
+
+
+<footer>
+    <div class="container_footer">
+        
+        <img class="logo" src="../img/arte  shibari25...jpg" alt="Imagen de shibari">
+        <h3>SHIBARI-DOJO</h3>
+       
+        <p>Kinbaku</p>
+        <p>Una posibilidad aerea de vivir en un mundo flotante</p>
+        <!-- <p>Arte y sus multiples expresiones- Shibari/Kinbaku - Ataduras Japonesas</p> -->
+        <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 SHIBARI-DOJO. diseñado por <span>Hernan Ledesma y Joshelin Torres</span></p>
+        </div>
+
+        
+    </div>
+</footer>
+
+</html>
